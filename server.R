@@ -48,10 +48,6 @@ psam = reactive({
   noquote(sprintf("%.4f", data$p_sam[input$wavelength-399]))
 })
 
-# output$test = renderText({
-#     paste0(abs(), " = -log(", trans(), ") = -log(", psam(), ")/(", pref(), ")")
-# })
-
 output$equation = renderText({
   paste0(abs(), " = \u2013log(", trans(), ") = \u2013log{(", psam(), ")/(", pref(), ")}")
 })

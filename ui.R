@@ -15,11 +15,12 @@ shinyUI(fluidPage(
       br(),
       HTML("<h3><center>Beer's Law</center></h3>"),
       HTML("<p>Demonstration of the relationship between the source's 
-           power as passed by a reference, \\({P}_{\\textrm{reference}}\\),
-           the source's power as passed by the sample, 
-           \\({P}_{\\textrm{sample}}\\), the transmittance of the source's
-           radiation by the sample, <em>T</em>, and the absorbance of 
-           the source's radiation, <em>A</em>, by the sample.</p>")
+           power as passed by the reference, 
+           \\({P}_{\\textrm{reference}}\\), the source's power as 
+           passed by the sample, \\({P}_{\\textrm{sample}}\\), the 
+           transmittance of the source's radiation by the sample, 
+           <em>T</em>, and the absorbance of the source's radiation, 
+           <em>A</em>, by the sample.</p>")
       # HTML("<p>\\(A = -\\textrm{log}T =
       #      -\\textrm{log}\\frac { { P }_{ \\textrm{sample} }}
       #      { { P }_{\\textrm{reference}} }\\)</p>")
@@ -38,10 +39,6 @@ shinyUI(fluidPage(
       width = 9,
       offset = 2,
       align = "center",
-      # HTML("<h1>\\(A = -\\textrm{log}T =
-      #      -\\textrm{log}\\frac { { P }_{ \\textrm{sample} }}
-      #      { { P }_{\\textrm{reference}} }\\)</h1>"
-      #      ),
       HTML("<h1>\\(A = -\\textrm{log}T =
             -\\textrm{log}\\left\\{ {P}_{\\textrm{sample}}/
             {P}_{\\textrm{reference}} \\right\\}\\)</h1>"
@@ -63,16 +60,16 @@ shinyUI(fluidPage(
       sliderInput("wavelength", "Wavelength?", min = 400, max = 750, 
                   step = 1, value = 400,
                   animate = 
-                    animationOptions(interval = 500, 
+                    animationOptions(interval = 750, 
                                      playButton = "Run",
                                      pauseButton = "Stop")),
 
       HTML("<p>Adjust the slider to change the wavelength and view the
             relationship between the four values. Click on the  
             run button to advance through the wavelengths automatically 
-            (note: the animation advances at a rate of 2 nm/sec, so you 
-            first may wish to adjust the wavelength to a region of 
-            interest).</p>")
+            (note: because the animation advances at a rate of 
+            1.33 nm/sec, you first may wish to adjust the wavelength 
+            to a region of interest).</p>")
     ),
     column(
       width = 3,
