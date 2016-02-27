@@ -1,0 +1,10 @@
+name: AbsTransPower
+account: dthdpu
+server: shinyapps.io
+appId: 85628
+bundleId: 381956
+url: https://dthdpu.shinyapps.io/AbsTransPower/
+when: 1456585507.86733
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md|README.pdf
